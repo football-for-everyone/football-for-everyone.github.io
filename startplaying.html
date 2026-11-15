@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Playing - Football for Everyone</title>
+  <!-- heading font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&display=swap" rel="stylesheet">
+  <!-- one CSS file for all my pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- green bar with my logo and site name -->
+  <header>
+    <div class="inside">
+      <a class="logo" href="index.html">
+        <img src="images/ball.svg" alt="" width="40" height="40">
+        Football for Everyone
+      </a>
+    </div>
+  </header>
+
+  <!-- menu: the same 5 links on every page -->
+  <nav>
+    <div class="inside menu">
+      <a href="index.html">Home</a>
+      <a href="startplaying.html" class="current">Start Playing</a>
+      <a href="equipmentandsafety.html">Equipment and Safety</a>
+      <a href="involveothers.html">Involve Others</a>
+      <a href="takeaction.html">Take Action</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <h1>Start playing one step at a time</h1>
+    <p>New to football? That's okay! Follow these three steps, then try the quick quiz.</p>
+
+    <!-- the 3 steps -->
+    <section class="boxes">
+      <div class="step">
+        <h2>1. Prepare</h2>
+        <p>Wear trainers and comfy clothes. Bring water. Ask a PE teacher when there is a game or club you can join.</p>
+      </div>
+      <div class="step">
+        <h2>2. Try a pass</h2>
+        <p>Stand a few big steps away from a partner. Pass the ball with the inside of your foot. Count how many passes you can do in a row.</p>
+      </div>
+      <div class="step">
+        <h2>3. Check and act</h2>
+        <p>See what kit you need on <a href="equipmentandsafety.html">Equipment and Safety</a>. Then choose your first step on <a href="takeaction.html">Take Action</a>.</p>
+      </div>
+    </section>
+
+    <img class="wide-pic" src="images/pass.svg" alt="Drawing of two players passing a football to each other">
+
+    <!-- True or False quiz (the code is in quiz.js) -->
+    <section class="quiz">
+      <h2>Quick quiz: True or False?</h2>
+
+      <div class="question">
+        <p><strong>1.</strong> You must already be good at football to join a game.</p>
+        <button onclick="check(1, 'true')">True</button>
+        <button onclick="check(1, 'false')">False</button>
+        <p class="feedback" id="feedback1"></p>
+      </div>
+
+      <div class="question">
+        <p><strong>2.</strong> For a short pass, you should use the inside of your foot.</p>
+        <button onclick="check(2, 'true')">True</button>
+        <button onclick="check(2, 'false')">False</button>
+        <p class="feedback" id="feedback2"></p>
+      </div>
+
+      <div class="question">
+        <p><strong>3.</strong> You have to buy all the kit before your first practice.</p>
+        <button onclick="check(3, 'true')">True</button>
+        <button onclick="check(3, 'false')">False</button>
+        <p class="feedback" id="feedback3"></p>
+      </div>
+
+      <p id="score">Score: 0 out of 3</p>
+      <button class="retry" onclick="retry()">Retry</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inside">
+      <p>No account or personal details. Credits and sources are on <a href="takeaction.html#sources">Take Action</a>.</p>
+      <p>Quiz answers and checklist ticks reset when you refresh the page.</p>
+    </div>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

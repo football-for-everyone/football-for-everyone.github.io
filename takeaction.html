@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Take Action - Football for Everyone</title>
+  <!-- heading font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&display=swap" rel="stylesheet">
+  <!-- one CSS file for all my pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- green bar with my logo and site name -->
+  <header>
+    <div class="inside">
+      <a class="logo" href="index.html">
+        <img src="images/ball.svg" alt="" width="40" height="40">
+        Football for Everyone
+      </a>
+    </div>
+  </header>
+
+  <!-- menu: the same 5 links on every page -->
+  <nav>
+    <div class="inside menu">
+      <a href="index.html">Home</a>
+      <a href="startplaying.html">Start Playing</a>
+      <a href="equipmentandsafety.html">Equipment and Safety</a>
+      <a href="involveothers.html">Involve Others</a>
+      <a href="takeaction.html" class="current">Take Action</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <h1>Take Action</h1>
+    <p>Choose the steps you want to try this week. Your ticks are not saved anywhere. They disappear when you refresh the page.</p>
+
+    <!-- checklist (the code is in checklist.js) -->
+    <section class="checklist">
+      <h2>My first steps</h2>
+      <label><input type="checkbox" autocomplete="off" onchange="countTicks()"> Ask a PE teacher about a game or club I can join</label>
+      <label><input type="checkbox" autocomplete="off" onchange="countTicks()"> Try 10 short passes with a friend</label>
+      <label><input type="checkbox" autocomplete="off" onchange="countTicks()"> Invite a new student to play with us</label>
+      <p id="count">You picked 0 of 3 steps.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Credits and sources</h2>
+      <ul>
+        <li>The IFAB, Laws of the Game, Law 4: The Players' Equipment (theifab.com). I used it for the formal match kit list.</li>
+        <li>England Football, help for new players (englandfootball.com). I used it for easy ways to start playing.</li>
+        <li>Special Olympics, Unified Football (specialolympics.org). I used it for ideas on including everyone.</li>
+        <li>Pictures: drawn by me with simple shapes. There are no photos of real students.</li>
+        <li>Heading font: League Spartan from Google Fonts (free to use).</li>
+      </ul>
+      <p>Questions? Ask your PE teacher at school.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inside">
+      <p>No account or personal details. Credits and sources are on <a href="takeaction.html#sources">Take Action</a>.</p>
+      <p>Quiz answers and checklist ticks reset when you refresh the page.</p>
+    </div>
+  </footer>
+
+  <script src="checklist.js"></script>
+</body>
+</html>

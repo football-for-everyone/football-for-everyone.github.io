@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300">
+  <!-- my own drawing: two players passing the ball -->
+  <defs>
+    <clipPath id="frame2">
+      <rect width="640" height="300" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame2)">
+    <!-- sky and grass -->
+    <rect width="640" height="300" fill="#DDF0F7"/>
+    <rect y="150" width="640" height="150" fill="#2E9E5B"/>
+    <g fill="#279253">
+      <rect x="80" y="150" width="120" height="150"/>
+      <rect x="320" y="150" width="120" height="150"/>
+      <rect x="560" y="150" width="120" height="150"/>
+    </g>
+    <g fill="#FFFFFF">
+      <ellipse cx="560" cy="48" rx="44" ry="14"/>
+      <ellipse cx="584" cy="38" rx="24" ry="14"/>
+    </g>
+
+    <!-- cones -->
+    <polygon points="30,272 40,246 50,272" fill="#F4A340"/>
+    <rect x="26" y="270" width="28" height="5" rx="2" fill="#E08E2B"/>
+    <polygon points="590,272 600,246 610,272" fill="#F4A340"/>
+    <rect x="586" y="270" width="28" height="5" rx="2" fill="#E08E2B"/>
+
+    <!-- player kicking (moved from my Home page drawing) -->
+    <g transform="translate(-130,-62)">
+      <ellipse cx="280" cy="346" rx="46" ry="7" fill="#000000" opacity="0.15"/>
+      <line x1="262" y1="286" x2="258" y2="336" stroke="#8D5524" stroke-width="13" stroke-linecap="round"/>
+      <ellipse cx="254" cy="341" rx="13" ry="6" fill="#142B40"/>
+      <line x1="282" y1="284" x2="320" y2="318" stroke="#8D5524" stroke-width="13" stroke-linecap="round"/>
+      <ellipse cx="326" cy="322" rx="13" ry="6" fill="#142B40" transform="rotate(35 326 322)"/>
+      <line x1="252" y1="218" x2="226" y2="252" stroke="#8D5524" stroke-width="10" stroke-linecap="round"/>
+      <line x1="288" y1="218" x2="316" y2="198" stroke="#8D5524" stroke-width="10" stroke-linecap="round"/>
+      <rect x="248" y="262" width="44" height="28" rx="8" fill="#142B40"/>
+      <rect x="248" y="206" width="44" height="62" rx="15" fill="#F4A340"/>
+      <text x="270" y="247" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#142B40" text-anchor="middle">7</text>
+      <circle cx="270" cy="184" r="20" fill="#8D5524"/>
+      <path d="M250 182 Q250 160 270 160 Q290 160 290 182 Q282 172 270 172 Q258 172 250 182 Z" fill="#1F1A17"/>
+      <circle cx="263" cy="186" r="2.2" fill="#1F1A17"/>
+      <circle cx="277" cy="186" r="2.2" fill="#1F1A17"/>
+      <path d="M262 194 Q270 200 278 194" fill="none" stroke="#1F1A17" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- ball and dashed arrow to the other player -->
+    <path d="M240 254 Q330 200 412 238" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+    <polygon points="412,238 398,240 406,228" fill="#FFFFFF"/>
+    <g transform="translate(-130,-62)">
+      <circle cx="348" cy="322" r="15" fill="#FFFFFF" stroke="#142B40" stroke-width="2"/>
+      <polygon points="348,316 353.7,320.1 351.5,326.9 344.5,326.9 342.3,320.1" fill="#142B40"/>
+      <g stroke="#142B40" stroke-width="1.8" stroke-linecap="round">
+        <line x1="348" y1="316" x2="348" y2="309"/>
+        <line x1="353.7" y1="320.1" x2="360.4" y2="318"/>
+        <line x1="351.5" y1="326.9" x2="355.6" y2="332.5"/>
+        <line x1="344.5" y1="326.9" x2="340.4" y2="332.5"/>
+        <line x1="342.3" y1="320.1" x2="335.6" y2="318"/>
+      </g>
+    </g>
+
+    <!-- player getting ready to receive (moved from my Home page drawing) -->
+    <g transform="translate(20,-62)">
+      <ellipse cx="455" cy="346" rx="36" ry="7" fill="#000000" opacity="0.15"/>
+      <line x1="447" y1="280" x2="441" y2="336" stroke="#142B40" stroke-width="14" stroke-linecap="round"/>
+      <line x1="463" y1="280" x2="469" y2="336" stroke="#142B40" stroke-width="14" stroke-linecap="round"/>
+      <ellipse cx="437" cy="341" rx="12" ry="6" fill="#F4A340"/>
+      <ellipse cx="473" cy="341" rx="12" ry="6" fill="#F4A340"/>
+      <line x1="438" y1="222" x2="410" y2="194" stroke="#142B40" stroke-width="14" stroke-linecap="round"/>
+      <line x1="438" y1="222" x2="410" y2="194" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+      <line x1="472" y1="222" x2="500" y2="194" stroke="#142B40" stroke-width="14" stroke-linecap="round"/>
+      <line x1="472" y1="222" x2="500" y2="194" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="407" cy="191" r="6" fill="#C68642"/>
+      <circle cx="503" cy="191" r="6" fill="#C68642"/>
+      <rect x="435" y="212" width="40" height="64" rx="14" fill="#FFFFFF" stroke="#142B40" stroke-width="2"/>
+      <rect x="451" y="213" width="8" height="62" fill="#16703C"/>
+      <circle cx="455" cy="190" r="24" fill="#7B5EA7"/>
+      <path d="M433 196 Q455 242 477 196 Z" fill="#7B5EA7"/>
+      <ellipse cx="455" cy="191" rx="14" ry="16" fill="#C68642"/>
+      <circle cx="450" cy="190" r="2" fill="#1F1A17"/>
+      <circle cx="460" cy="190" r="2" fill="#1F1A17"/>
+      <path d="M449 198 Q455 203 461 198" fill="none" stroke="#1F1A17" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

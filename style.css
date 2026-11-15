@@ -1,0 +1,427 @@
+/* =============================================
+   Football for Everyone - style.css
+   One CSS file for all 5 pages.
+
+   My colours (from my style guide):
+   green  #16703C = header, cards and links
+   navy   #142B40 = text and footer
+   orange #F4A340 = main buttons
+   white  #FFFFFF = page background
+   ============================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #142B40;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* headings use League Spartan */
+h1, h2 {
+  font-family: "League Spartan", Arial, sans-serif;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #16703C;
+}
+
+.green {
+  color: #16703C;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* keeps everything in the middle and not too wide */
+.inside {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- skip link (only shows when you press Tab) ---------- */
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 10;
+  padding: 12px 16px;
+  background-color: #FFFFFF;
+  color: #142B40;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* ---------- green bar at the top ---------- */
+header {
+  background-color: #16703C;
+  padding: 16px 0;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #FFFFFF;
+  font-family: "League Spartan", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ---------- menu ---------- */
+nav {
+  border-bottom: 2px solid #DDE3E7;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px 6px 6px;
+  color: #142B40;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+  color: #16703C;
+}
+
+/* the page you are on turns green and gets a line under it */
+.menu a.current {
+  color: #16703C;
+  border-bottom: 4px solid #16703C;
+}
+
+/* ---------- main part of the page ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Home page: words on the left, picture on the right */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-pic {
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Home page: the two big green cards */
+.cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 80px;
+  padding: 16px 24px;
+  background-color: #16703C;
+  color: #FFFFFF;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: #0F5530;
+}
+
+.card strong {
+  display: block;
+  font-family: "League Spartan", Arial, sans-serif;
+  font-size: 24px;
+}
+
+.card small {
+  font-size: 16px;
+}
+
+/* orange triangle made with CSS borders */
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 26px solid #F4A340;
+}
+
+/* boxes in a row (Equipment, Start Playing, Involve Others) */
+.boxes {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px 24px;
+  background-color: #16703C;
+  color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.box h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.box p {
+  margin: 0;
+}
+
+/* white boxes with a green border for the 3 steps */
+.step {
+  flex: 1;
+  padding: 20px 24px;
+  border: 3px solid #16703C;
+  border-radius: 16px;
+}
+
+.step h2 {
+  color: #16703C;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.step p {
+  margin: 0;
+}
+
+/* light green note with a line on the left */
+.note {
+  padding: 12px 16px;
+  background-color: #EEF6F1;
+  border-left: 6px solid #16703C;
+  border-radius: 8px;
+}
+
+/* orange button */
+.button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 12px 24px;
+  background-color: #F4A340;
+  color: #142B40;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #E08E2B;
+}
+
+.wide-pic {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+/* ---------- quiz (Start Playing page) ---------- */
+.quiz {
+  padding: 24px;
+  background-color: #F4F6F7;
+  border-radius: 16px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  margin: 0 0 8px;
+}
+
+.quiz button {
+  min-width: 88px;
+  min-height: 44px;
+  margin-right: 8px;
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  color: #16703C;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #16703C;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.quiz button:hover {
+  background-color: #EEF6F1;
+}
+
+.quiz .retry {
+  background-color: #F4A340;
+  color: #142B40;
+  border-color: #F4A340;
+}
+
+.feedback {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.right {
+  color: #16703C;
+}
+
+.wrong {
+  color: #B3261E;
+}
+
+#score {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------- box that opens (Involve Others page) ---------- */
+details {
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: 3px solid #16703C;
+  border-radius: 12px;
+}
+
+summary {
+  min-height: 44px;
+  padding: 8px 0;
+  color: #16703C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ---------- checklist (Take Action page) ---------- */
+.checklist label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background-color: #F4F6F7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checklist input {
+  width: 24px;
+  height: 24px;
+  accent-color: #16703C;
+}
+
+#count {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ---------- thick outline so keyboard users can see where they are ---------- */
+a:focus,
+button:focus,
+input:focus,
+summary:focus {
+  outline: 3px solid #142B40;
+  outline-offset: 3px;
+}
+
+header a:focus,
+footer a:focus {
+  outline-color: #FFFFFF;
+}
+
+/* ---------- navy footer ---------- */
+footer {
+  padding: 16px 0;
+  background-color: #142B40;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 4px auto;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+/* ---------- phones and small tablets (smaller than 768 px) ---------- */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu {
+    justify-content: flex-start;
+  }
+
+  /* put things under each other in one column */
+  .hero,
+  .cards,
+  .boxes {
+    flex-direction: column;
+  }
+
+  .hero-pic {
+    max-width: 100%;
+  }
+}
